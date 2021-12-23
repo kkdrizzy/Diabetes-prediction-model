@@ -1,0 +1,246 @@
+body {
+    background-color: #F6F6F6;
+    text-align: center;
+    margin: 0%;
+    font-family: 'Ubuntu';
+}
+
+/* #6C63FF,#8179FF,#968FFF,#ABA5FF,#C0BCFF,#D5D2FF,#EAE8FF */
+/* #6C63FF,#5C54DA,#4D46B6,#3D3891,#2E2A6D,#1E1C48,#0F0E24 */
+
+h1 {
+    margin: auto auto auto 0%;
+    color: #f6f6f6;
+    font-family: 'Karla';
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #f6f6f6;
+    border-bottom: 1px solid #eaeaea;
+}
+
+h3 {
+    color: #161D6F;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+hr {
+    border-style: dotted none none;
+    border-width: 6px;
+    border-color: #6C63FF;
+    width: 12%;
+    margin: auto;
+}
+
+.container-fluid {
+    padding: 3% 10%;
+}
+
+/* Title Section */
+
+#title {
+    display: flex;
+    justify-content: center;
+    background-color: #161D6F;
+    padding: 0% 10%;
+}
+
+.logo {
+    margin: auto auto auto 0%;
+    width: 8%;
+}
+
+/* Basic Information */
+.basic-infos {
+    margin: 4% 1%;
+}
+
+.intake {
+    background-color: #6C63FF;
+    text-align: center;
+    color: #f6f6f6;
+    border-radius: 5px;
+    border-width: 1.5px;
+    padding: 1px;
+    width: 100%;
+}
+
+input::placeholder {
+    color: #f6f6f6;
+}
+
+/* Payment info */
+
+.payment-col {
+    margin: 4% 0% 0%;
+}
+
+.payment-info {
+    display: flex;
+    margin: 0% 0% 3% 5%;
+    justify-content: left;
+    position: relative;
+}
+
+/* Repayment Information */
+
+.svg-img {
+    margin-top: 7%;
+    width: 100%;
+}
+
+.payment-info select {
+    background-color: #6C63FF;
+    color: #f6f6f6;
+    border-radius: 5px;
+    text-align: center;
+    border-width: 1.5px;
+    position: absolute;
+    right: 10%;
+}
+
+/* Bill Information */
+
+.payment-info input {
+    background-color: #6C63FF;
+    color: #f6f6f6;
+    border-radius: 5px;
+    width: 40%;
+    text-align: center;
+    border-width: 1.5px;
+    position: absolute;
+    right: 10%;
+}
+
+/* Submit */
+
+.submit {
+    background-color: #161D6F;
+}
+
+.btn-1 {
+    background-color: red;
+    color: #fff;
+    border-radius: 6px;
+    width: 150px;
+    height: 35px;
+    transition: all .5s ease-in-out;
+    border-width: 1.5px;
+    font-size: 20px;
+    box-shadow: inset 0 0 0 0 #98ff63;
+}
+
+.btn-1:hover {
+    box-shadow: inset 150px 0 0 0 #98ff63;
+    cursor: pointer;
+    color: black;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #161D6F;
+    color: #f6f6f6;
+    padding-top: 5%;
+    padding-bottom: .5%;
+}
+
+h5 {
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+}
+
+/* Result */
+#result {
+    background-color: black;
+    margin-top: 3%;
+    height: 250px;
+    padding: 1%;
+    box-shadow: 8px 8px 0 0 rgba(0, 0, 0, .3);
+}
+
+.prediction-text {
+    font-size: 1.8rem;
+    padding: 2%;
+    letter-spacing: 2px;
+    color: #f6f6f6;
+    margin: 1% auto;
+    position: relative;
+    background-color: black;
+    animation: text 3s 1;
+
+}
+
+.prediction-answer {
+    padding: 2%;
+    font-size: 1.8rem;
+    color: #6C63FF;
+}
+
+@keyframes text {
+    0% {
+        color: black;
+        margin-bottom: -12%;
+    }
+
+    30% {
+        letter-spacing: 7px;
+        margin-bottom: -12%;
+    }
+
+}
+
+/* Reset Button */
+.reset {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    outline: 1px solid white;
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    padding: 1%;
+    transition: 0.2s ease-in-out;
+}
+
+.reset:hover {
+    font-size: 1.2rem;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+}
+
+/* max-width:600px */
+
+@media (max-width:1150px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .payment-info select {
+        width: 30%;
+    }
+
+    .payment-info input {
+        width: 30%;
+    }
+
+    .prediction-text , .prediction-answer{
+        font-size: 1.5rem;
+    }
+
+    .reset{
+        font-size: 0.8rem;
+    }
+
+    .reset:hover{
+        font-size: 1rem;
+    }
+}
